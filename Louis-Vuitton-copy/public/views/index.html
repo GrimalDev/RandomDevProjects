@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../styles/media/favicon.ico">
+    <title>Louis Vuitton</title>
+
+    <!--JQuery-->
+    <script type="text/javascript" src="../libraries/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- custom bootstrap -->
+    <link type="text/css" rel="stylesheet" href="../styles/custom-switch.css">
+    <!-- animations -->
+    <link type="text/css" rel="stylesheet" href="../styles/animations.css">
+    <!--main CSS-->
+    <link type="text/css" rel="stylesheet" href="../styles/style-index.css">
+    <!--main JS-->
+    <script defer type="application/javascript" src="../scripts/script-index.js"></script>
+</head>
+<body>
+    <header>
+        <div id="container-top-menu">
+            <nav id="container-top-top" class="mx-3 m-md-0">
+                <div id="container-top-menu-inner-left" class="top-menu-element wide-view">
+                    <svg class="top-menu-element d-inline d-md-none" id="menu-burger-control"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-burger"></use></svg>
+                    <svg class="lv-icon border-fade-in top-menu-element d-flex d-md-none"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-wishlist-off"></use></svg>
+                    <span id="top-delivery" class="top-menu-element d-none d-md-flex ">
+                        <span id="info-flag"></span>
+                        <span id="info-contry">Pays de livraison :&nbsp</span>
+                    </span>
+                    <span id="top-help" class="top-menu-element d-none d-lg-flex">
+                        <svg class="lv-icon"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-help"></use></svg>
+                        <span>Besoin d'aide ?</span>
+                    </span>
+                    <span id="top-cell-phone" class="top-menu-element d-none d-md-flex">
+                        <svg class="lv-icon"><use xlink:href="../styles/media/scalable/icons.svg#sprite-controls-contact"></use></svg>
+                        <span>+33 9 77 40 40 77</span>
+                    </span>
+                    <span class="top-menu-element d-none d-md-flex">Développement Durable</span>
+                </div>
+                <div class="d-flex d-md-none text-uppercase fs-6" id="mobile-lv-title-top">louis vuitton</div>
+                <div id="container-top-menu-inner-right">
+                    <svg class="lv-icon border-fade-in top-menu-element d-none d-md-flex"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-geolocalisation"></use></svg>
+                    <svg class="lv-icon border-fade-in top-menu-element d-none d-md-flex"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-wishlist-off"></use></svg>
+                    <svg class="lv-icon border-fade-in top-menu-element"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-account"></use></svg>
+                    <svg class="lv-icon border-fade-in top-menu-element"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-cart"></use></svg>
+                </div>
+            </nav>
+    
+            <nav class="text-uppercase row align-items-center flex-nowrap text-center gx-0" id="container-top-lv">
+                <span class="col-1 pe-0 pe-lg-3 d-none d-md-flex">louis vuitton</span>
+                <ul class="col row flex-nowrap d-none d-md-flex ">
+                    <li class="border-fade-in col-2 pe-0 pe-lg-3">nouveautés</li>
+                    <li class="border-fade-in col-2 pe-0 pe-lg-3">femme</li>
+                    <li class="border-fade-in col-2 pe-0 pe-lg-3">homme</li>
+                    <li class="border-fade-in col-2 pe-0 pe-lg-3">art de vivre</li>
+                    <li class="border-fade-in col-2 pe-0 pe-lg-3">magazine</li>
+                    <li class="border-fade-in col-2">holiday</li>
+                </ul>
+                <span class="col col-md-4 m-2 m-md-0 flex-shrink-1">
+                    <svg class="lv-icon"><use xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-search"></use></svg>
+                    <input type="text" placeholder="Produit, magasin,...">
+                </span>
+            </nav>
+        </div>
+        <div id="container-top-scarf" class="justify-content-between">
+            <span id="scarf-title" class="text-uppercase ps-4 ps-md-0 py-4">écharpes</span>
+            <div class="filters-display d-flex d-md-none align-items-center px-4">
+                <svg class="lv-icon me-2"><use xlink:href="../styles/media/scalable/icons.svg#sprite-controls-filter"></use></svg>
+                <span>Voir Les Filtres</span>
+            </div>
+        </div>
+        <div id="container-top-filters">
+            <nav class="text-center d-flex justify-content-end">
+                <div id="filter-online-mode" class="filters-category d-none d-lg-flex align-items-center justify-content-center justify-content-md-end gap-4">
+                    <span class="text-uppercase pe-4">voir les filtres:</span>
+                    <div id="form-filter-switch" class="d-flex align-items-center">
+                        <label for="filter-switch" id="filter-switch-label">Disponible en ligne</label>
+                        <label class="switch">
+                            <input type="checkbox" id="filter-switch">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <span class="d-none d-lg-flex filters-category filters-category-border px-3 px-xxl-5 border-fade-in">Collections</span>
+                <span class="d-none d-lg-flex filters-category filters-category-border px-3 px-xxl-5 border-fade-in">Couleurs</span>
+                <span class="d-none d-lg-flex filters-category filters-category-border px-3 px-xxl-5 border-fade-in">Matière</span>
+
+                <div class="filters-display d-none d-md-flex d-lg-none align-items-center p-4">
+                    <svg class="lv-icon me-2"><use xlink:href="../styles/media/scalable/icons.svg#sprite-controls-filter"></use></svg>
+                    <span>Voir Les Filtres</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="d-flex flex-wrap justify-content-between px-4 mx-auto mt-3 mt-md-5">
+        <div id="sell-object-model" class="sell-object position-relative pb-4">
+            <img src="../styles/media/scraf.jpg" alt="image d'écharpe">
+            <svg class="position-absolute top-0 end-0 m-2 wishlist-hearth"><use class="wishlist-hearth" xlink:href="../styles/media/scalable/icons.svg#sprite-navigation-wishlist-off"></use></svg>
+            <div class="object-navigation-arrows position-absolute top-0 d-flex justify-content-between align-items-center">
+                <button class="btn btn-real-white px-4 py-3">
+                    <svg><use xlink:href="../styles/media/scalable/icons.svg#sprite-controls-chevron-left-center"></use></svg>
+                </button>
+                <button class="btn btn-real-white px-4 py-3">
+                    <svg><use xlink:href="../styles/media/scalable/icons.svg#sprite-controls-chevron-right-center"></use></svg>
+                </button>
+            </div>
+            <div class="sell-object-description pt-3">
+                <div class="w-100 d-flex justify-content-between">
+                    <span class="text-uppercase">echarpe monogram</span>
+                    <div class="d-flex gap-2">
+                        <span class="color-square bg-primary"></span>
+                        <span class="color-square bg-secondary"></span>
+                        <span class="color-square bg-success"></span>
+                        <span class="color-square bg-danger"></span>
+                    </div>
+                </div>
+                <span class="price">500,00€</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.border-fade-in {
+  border-bottom: .8px solid transparent;
+}
+
+.border-fade-in:hover {
+  animation-name: FadeIn;
+  animation-duration: .5s;
+  transition-timing-function: linear;
+  border-bottom: .8px solid black;
+}
+
+@keyframes FadeIn {
+  0% {
+    border-bottom-color: transparent;
+  }
+  100% {
+    border-bottom-color: black;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    border-bottom-color: transparent;
+  }
+  100% {
+    border-bottom-color: black;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    border-bottom-color: transparent;
+  }
+  100% {
+    border-bottom-color: black;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    border-bottom-color: transparent;
+  }
+  100% {
+    border-bottom-color: black;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    border-bottom-color: transparent;
+  }
+  100% {
+    border-bottom-color: black;
+  }
+}
