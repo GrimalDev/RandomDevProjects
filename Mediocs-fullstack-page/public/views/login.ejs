@@ -1,0 +1,72 @@
+<!--LOGIN HTML named "login.html"-->
+<!DOCTYPE html>
+
+<html lang="FR">
+  <head>
+
+    <meta HTTP-EQUIV="Content-Type" content = "text/html; charset = UTF-8">
+    
+    <title>Mediocs</title>
+
+    <!--Link to stylesheet named style.css-->
+    <link type="text/css" rel="stylesheet" href="/style/style_login.css">
+
+    <!--Link to Javascript script named script.js-->
+    <script defer src="/script/script_login.js" type="application/javascript"></script>
+
+    <!--Icon tab as "/favicon.ico"-->
+    <link type rel="icon" href="/style/media/scalable/labo_icon.svg">
+
+  </head>
+
+  <body>
+
+    <div class="top">
+
+      <!-- top logo -->
+      <img id="logo"
+        src="/style/media/scalable/labo_icon.svg" 
+        alt="Logo laboratoire"/>
+
+      <!--"top-left" title from login page-->
+      <div class="titre_logo">Laboratoires Barrand</div>
+
+    </div>
+ 
+    <!-- form to log in -->
+
+    <form id="login_form" method="post" action="/login">
+        <!-- handle errors -->
+        <% if (message.error) { %>
+          <div class="login_error"><%= message.error %></div>
+        <% } %>
+
+      <!-- entry -->
+      <div class="container">
+        <label for="uname"><b>Nom d'utilisateur</b></label>
+        <input  id="uNAME" type="text" placeholder="Entrer nom d'utilisateur" name="email" required>
+    
+        <label for="psw"><b>Mot de passe</b></label>
+        <input  id="uPSW" type="password" placeholder="Entrer mot de passe" name="password" required>
+        <input id="show_password" type="checkbox">Afficher le mot de passe</input>
+    
+        <button id="submit_button" type="submit" >Se connecter</button>
+        <label>
+          <input id="checkbox" type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+        </label>
+      </div>
+    
+      <!-- options -->
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" id="help">Aide?</button>
+        <span class="psw"><a href="#">Mot de passe oublié?</a></span>
+      </div>
+    </form>
+
+    <div id="credits">
+      Page created by <a  id="github" href="https://github.com/GrimalDev"><span id="author">Baptiste Grimaldi</span></a>
+    </div>
+
+  </body>
+
+</html>

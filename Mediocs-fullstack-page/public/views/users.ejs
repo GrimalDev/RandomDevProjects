@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modification des utilisateurs</title>
+
+        <link rel="stylesheet" href="../style/style_users.css" type="text/css">
+        <link rel="stylesheet" href="../style/style_register.css" type="text/css">
+
+        <script type="text/javascript" src="../libraries/jquery.min.js"></script>
+        <script type="text/javascript" src="../libraries/jquery.tablesorter.min.js"></script>
+
+        <script src="../script/script_users.js" type="text/javascript"></script>
+        
+        <link rel="icon" href="../style/media/scalable/labo_icon.svg">
+    </head>
+    <body>
+        
+        <div id="container_top">
+            <form id="disconnect" action="/logout?_method=DELETE" method="POST">
+                <button type="Log Out">Se déconnecter</button>
+            </form>
+            <h1>Admin tools</h1>
+        </div>
+
+        <table id="data_user_container"></table>
+
+        <div class="container_popup container_popup_hidden">
+            <p>Etes-vous sûr de vouloir appliquer les modifications?</p>
+            <div class="buttons_flex_container">
+                <button class="popup_button popup_button_confirm">Confirmer</button>
+                <button class="popup_button popup_button_cancel">Retour</button> 
+            </div>
+        </div>
+
+    </body>
+</html>

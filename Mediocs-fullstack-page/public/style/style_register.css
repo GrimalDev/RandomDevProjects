@@ -1,0 +1,235 @@
+/* _________________________________________________ */
+/* -----------------Common initiation--------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+html {
+    position: relative;
+    height: 100%;
+
+}
+
+body {
+    position: relative;
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: lightblue;
+    height: 100%;
+}
+
+/*_______________________________________________________*/
+/* -----------First HTML page named index.html----------- */
+
+#body_html_index {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+    height: 100vh;
+}
+
+#html_index, #body_html_index {
+    overflow-x: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+.top {
+    position: relative;
+    z-index: 1;  
+}
+
+#logo {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 15%;
+}
+
+.titre_logo {
+    position: fixed;
+    top: 7%;
+    left: 20%;
+    font-size: 3vw; 
+}
+
+/* ----------Register--------- */
+
+.logout {
+    position: relative;
+    left: 1%;
+    top: 1%;
+    width: 10%;
+}
+
+/* choose power */
+
+#power {
+    padding: 1.63% 1.63% 1.63% 2%;
+    margin: 3px 0 10px 0;
+    width: 100%;
+    background-color:white;
+    border: #cccccc solid 1px;
+}
+
+/* Bordered form */
+#register_form {
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    width: 50%;
+    z-index: 3;
+    background-color: lightblue;
+}
+  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: grey 1px 1px 3px;
+    border-radius: 2px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+#login_test {
+    position: relative;
+    left: 43.5%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+input + label {
+    display: block;
+}
+
+#show_password1, #show_password2 {
+    margin: 0 10px 2% 0;
+}
+
+#password, #confirmPassword {
+    margin-bottom: 2px;
+}
+
+.register_error {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    background-color: #e66a5c;
+}
+
+/* ----------------------Pop-up--------------------- */
+
+#container-fullwidth-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.container_popup {
+    position: fixed;
+    display: inline;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px;
+    z-index: 200
+}
+
+p {
+    padding: 2em;
+    font-family: 'Exo2', arial, sans-serif;
+    font-weight: 600;
+}
+
+.buttons_flex_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup_button {
+    width: fit-content;
+}
+
+.container_popup_hidden {
+    position: relative;
+    visibility: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toBlur {
+    filter: blur(5px);
+}
+
+/* fade in animation for the popup */
+
+.fadeInAnimation {
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    -o-animation: fadeIn 0.5s;
+    -ms-animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

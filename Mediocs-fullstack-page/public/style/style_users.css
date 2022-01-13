@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url(../style/fonts/Exo2-VariableFont_wght.ttf) format('truetype');
+}
+
+#container_top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#disconnect {
+    position: absolute;
+    display: inline;
+    left: 0;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Exo2', arial, sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 7px;
+}
+
+/* --------------------Table------------------------------ */
+
+#data_user_container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    border-radius: 15px;
+    padding: 1%;
+    top: 15%;
+    width: 78%;
+    min-height: 76.3%;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+tr:first-child {
+    border-top:none;
+}
+
+tr:last-child {
+    border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+    background:#ffffff56;
+}
+td:nth-child(7) {
+    border-left: 2px solid black;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+    border-bottom-right-radius:3px;
+}
+
+th {
+    height: 2.5em;
+    border-bottom: 0.7px solid black;
+}
+
+td + td, th + th {
+    border-left: 0.5px solid black !important;
+}
+
+td > img {
+    width: 2em;
+    margin: 0.15em;
+}
+
+tr > td > img:hover {
+    opacity: 0.3;
+}
+
+td {
+    min-width: 5em;
+    height: 3em;
+}
+
+td select {
+    margin: 0 !important;
+}
+
+/* --------------image modify button----------------------------- */
+
+.smallInfo {
+    font-size: .5em;
+}
+
+.edit {
+    background-color: rgb(255, 255, 155) !important;
+}
+
+.edit:hover {
+    background-color: rgb(255, 133, 133) !important;
+}
+
+/* -------------Change password button--------------- */
+
+.passHolder {
+    margin: 1em 0.2em 0 0.2em;
+}
+
+/* ----------------------Pop-up--------------------- */
+
+.container_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c2e1ff;
+    display: inline;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px;
+}
+
+p {
+    padding: 2em;
+    font-family: 'Exo2', arial, sans-serif;
+    font-weight: 600;
+}
+
+.buttons_flex_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup_button {
+    width: fit-content;
+}
+
+.container_popup_hidden {
+    position: relative;
+    visibility: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toBlur {
+    filter: blur(5px);
+}
+
+/* fade in animation for the popup */
+
+.fadeInAnimation {
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    -o-animation: fadeIn 0.5s;
+    -ms-animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

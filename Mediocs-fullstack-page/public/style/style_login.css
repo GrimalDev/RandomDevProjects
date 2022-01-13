@@ -1,0 +1,170 @@
+/*Style sheet*/
+
+/* _________________________________________________ */
+/* -----------------Common initiation--------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+html {
+    position: relative;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: lightblue;
+    margin-bottom: 100px;
+    height: 100vh;
+}
+
+/*_______________________________________________________*/
+/* -----------First HTML page named index.html----------- */
+
+#html_index, #body_html_index {
+    overflow-x: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.top {
+    position: relative;
+    z-index: 1;  
+}
+
+#logo {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 15%;
+}
+
+.titre_logo {
+    position: fixed;
+    top: 7%;
+    left: 20%;
+    font-size: 3vw; 
+}
+
+/* ----------LOGIN--------- */
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    z-index: 3;
+    background-color: lightblue;
+}
+  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+#show_password {
+    margin-bottom: 2%;
+}
+
+/* Extra style for the cancel button (red) */
+#help {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* -------------credits---------------- */
+
+#credits {
+    position: relative;
+    font-size: 0.7vw;
+    top: 90%;
+    left: 2%;
+    opacity: 0.5;
+}
+
+#author {
+    position: relative;
+    text-align: center;
+    top: 60%;
+    color: brown;
+}
+
+#github {
+    color: lightcyan;
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8846a8;
+}
+
+a:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+a:active {
+    opacity: 1;
+}
+
+a:focus {
+    color: white;
+}
+
+/* ____________________Errors while loging-in_____________________ */
+
+.login_error {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    background-color: #e66a5c;
+}

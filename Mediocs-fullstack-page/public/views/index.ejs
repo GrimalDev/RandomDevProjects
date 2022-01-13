@@ -1,0 +1,76 @@
+<!-- Doc info viewer page -->
+
+<!DOCTYPE html>
+
+<html lang="FR">
+    <head>
+
+        <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8"> 
+
+        <title>Mediocs</title>
+    
+        <!--Link to stylesheet named style.css-->
+        <link rel="stylesheet" type="text/css" href="../style/style_index.css">
+
+        <script type="text/javascript" src="../libraries/jquery.min.js"></script>
+        <script type="text/javascript" src="../libraries/jquery.tablesorter.min.js"></script>
+
+        <!--Link to Javascript script named script.js-->
+        <script defer src="../script/script_index.js"></script>
+    
+        <!--Icon tab as "/favicon.ico"-->
+        <link rel="icon" href="../style/media/scalable/labo_icon.svg">
+
+    </head>
+    
+    <body>
+
+    <!-- logo on top of the page -->
+
+        <div id="top_container">
+            <img class="top_image_theme_img1" src="../style/media/scalable/labo_icon.svg" alt="Logo laboratoire"/>
+        
+            <!-- !!!!!!!!!!! -->
+            <form id="logout" action="/logout?_method=DELETE" method="POST">
+                <button id="logout_button" type="Log Out">Se déconnecter</button>
+            </form>
+    
+            <span class="top_image_theme_text1">Laboratoires Barrand</span>
+
+            <div id="name_dropdown_container">
+                <div class="dropdown" data-dropdown>
+                    <button class="main_link" data-dropdown-button>Menu</button>
+                    <div class="dropdown-menu tools-grid">
+                        <div>
+                            <div class="dropdown-heading">Mes options</div>
+                            <div class="dropdown-links">
+                                <span class="link">Option à venir</span>
+                                <span class="link">Option à venir</span>
+                                <span class="link">Option à venir</span>
+                            </div>
+                        </div>
+                        <% if (power === "authorized") { %>
+                            <div>
+                                <div class="dropdown-heading admin-menu">Options admin</div>
+                                <div class="dropdown-links">
+                                    <form action="/register" method="GET">
+                                        <button class="link" type="Redirect">Inscrire un utilisateur</button>
+                                    </form>
+                                    <form action="/users" method="GET">
+                                        <button class="link" type="Redirect">Actions sur utilisateurs</button>
+                                    </form>
+                                    <span class="link">Option à venir</span>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+                <span class="username_container"><%= name %></span>
+            </div>
+
+        </div>
+
+        <table id="data_med_container" border="0" cellpadding="5" cellspacing="0"></table>
+        
+    </body>
+</html>

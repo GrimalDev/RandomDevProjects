@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv = "Content-Type" content = "text/plain; charset = UTF-8">
+    
+    <title>Mediocs</title>
+
+    <!--Link to stylesheet named style.css-->
+    <link rel="stylesheet" type="text/css" href="../style/style_register.css">
+
+    <!--Link to Javascript script named script.js-->
+    <script defer src="../script/script_register.js"></script>
+
+    <!--Icon tab as "/favicon.ico"-->
+    <link rel="icon" href="../style/media/scalable/labo_icon.svg">
+</head>
+
+<body>
+
+  <form class="logout" action="/logout?_method=DELETE" method="POST">
+      <button type="Log Out">Se déconnecter</button>
+  </form>
+
+  <form id="register_form" method="post" action="/register">
+
+    <!-- error handling -->
+    <% if (message.error) { %>
+      <div class="register_error"><%= message.error %></div>
+    <% } %>
+
+    <!-- entry -->
+    <div class="container">
+      <div id="power_container">
+        <label for="power" id="power_label"><b>Autorisation</b></label>
+        <select name="power" id="power" required>
+          <option value="regular">Normal</option>
+          <option value="admin">Administrateur</option>
+        </select>
+      </div>
+
+      <label for="nom"><b>Nom</b></label>
+      <input  id="nom" type="text" placeholder="Entrer nom" name="nom" required>
+
+      <label for="prenom"><b>Prénom</b></label>
+      <input  id="prenom" type="text" placeholder="Entrer prénom" name="prenom" required>
+
+      <label for="email"><b>Identifiant</b></label>
+      <input  id="email" type="text" placeholder="Entrer identifiant" name="email" required>
+  
+      <label for="password"><b>Mot de passe</b></label>
+      <input  id="password" type="password" placeholder="Entrer mot de passe" name="password" required>
+      <input id="show_password1" type="checkbox">Afficher le mot de passe</input>
+
+      <label for="password"><b>Confirmation Mot de passe</b></label>
+      <input  id="confirmPassword" type="password" placeholder="Entrer mot de passe" name="confirmPassword" required>
+      <input id="show_password2" type="checkbox">Afficher le mot de passe</input>
+  
+      <button id="submit_button" type="submit" >Enregistrer l'utilisateur</button>
+
+      <form id="logout" action="/logout?_method=DELETE" method="POST">
+        <button type="Log Out">Connexion test</button>
+      </form>
+    </div>
+  </form>
+
+  <div id="container-fullwidth-popup">
+    <div class="container_popup container_popup_hidden">
+      <p>Etes-vous sûr de vouloir appliquer les modifications?</p>
+      <div class="buttons_flex_container">
+          <button class="popup_button popup_button_confirm">Confirmer</button>
+          <button class="popup_button popup_button_cancel">Retour</button>
+      </div>
+    </div>
+  </div>
+
+<!--   <div id="credits">
+    Page created by <a  id="github" href="https://github.com/GrimalDev"><span id="author">Baptiste Grimaldi</span></a>
+  </div>
+     -->
+</body>
+</html>
