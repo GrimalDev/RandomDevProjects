@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFT-M</title>
+
+    <!--link to CSS page-->
+    <link type="text/css" rel="stylesheet" href="../Style/style-index.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-------------NavBar------------------>
+    <nav class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center p-2">
+        <img class="mb-2" src="../Style/media/logo.png" alt="The NFT-M logo">
+        <div class="d-flex flex-column flex-sm-row gap-2">
+            <select class="bg-transparent">
+                <option selected>Community</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <button class="rounded-1">Wallet Connect</button>
+            <form action="get" class="d-flex d-sm-inline-flex gap-2">
+                <input class="ps-2 w-100 rounded-1" type="text" placeholder="Search">
+                <input type="submit" value="Search" class="rounded-1">
+            </form>
+        </div>
+    </nav>
+<!--------------Main Part----------------->
+    <main>
+        <header class="d-flex justify-content-between">
+            <div>
+                <h1>
+                    Discover, find,
+                    <br />
+                    Sell extraordinary
+                    <br />
+                    Monster NFTs
+                </h1>
+                <h4 class="py-3">
+                    Marketplace For Monster Collections
+                    <br />
+                    Non Fungible Token NFTs
+                </h4>
+                <div class="d-flex justify-content-center gap-5">
+                    <button class="rounded-1">
+                        <i class="bi bi-pencil-square"></i>
+                        explore
+                    </button>
+                    <button class="rounded-1">
+                        <i class="bi bi-eye"></i>
+                        create
+                    </button>
+                </div>
+            </div>
+            <!--robot image-->
+            <img class="d-none d-md-inline" src="../Style/media/robot-droite.png" alt="">
+        </header>
+        <!-----------nfts------------->
+        <div id="nft-placeholder" class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4">
+            <!--nft profiles-->
+            <div>
+                <div class="position-relative">
+                    <img src="../Style/media/monster1.jpg" alt="monstre nft">
+                    <div class="favorite position-absolute top-0 d-flex justify-content-end w-100 p-1">
+                        <span class="fw-bolder px-1">
+                            <i class="bi bi-heart"></i>
+                            120
+                        </span>
+                    </div>
+                </div>
+                <div class="py-1">Pinky Boom</div>
+                <div class="nft-description d-flex align-items-center">
+                    <img src="../Style/media/avatar1.jpg" alt="avatar profil">
+                    <div class="w-100 ps-1 d-flex justify-content-between flex-wrap">
+                        <span>Creator</span>
+                        <span class="text-end">Current Bid</span>
+                        <span>SamyKiller</span>
+                        <span class="text-end">4.80 ETH</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="position-relative">
+                    <img src="../Style/media/monster2.jpg" alt="monstre nft">
+                    <div class="favorite position-absolute top-0 d-flex justify-content-end w-100 p-1">
+                        <span class="fw-bolder px-1">
+                            <i class="bi bi-heart"></i>
+                            120
+                        </span>
+                    </div>
+                </div>
+                <div class="py-1">Triumphant</div>
+                <div class="nft-description d-flex align-items-center">
+                    <img src="../Style/media/avatar2.jpg" alt="avatar profil">
+                    <div class="w-100 ps-1 d-flex justify-content-between flex-wrap">
+                        <span>Creator</span>
+                        <span class="text-end">Current Bid</span>
+                        <span>SamyKiller</span>
+                        <span class="text-end">4.80 ETH</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="position-relative">
+                    <img src="../Style/media/monster3.jpg" alt="monstre nft">
+                    <div class="favorite position-absolute top-0 d-flex justify-content-end w-100 p-1">
+                        <span class="fw-bolder px-1">
+                            <i class="bi bi-heart"></i>
+                            120
+                        </span>
+                    </div>
+                </div>
+                <div class="py-1">Bearhug</div>
+                <div class="nft-description d-flex align-items-center">
+                    <img src="../Style/media/avatar3.jpg" alt="avatar profil">
+                    <div class="w-100 ps-1 d-flex justify-content-between flex-wrap">
+                        <span>Creator</span>
+                        <span class="text-end">Current Bid</span>
+                        <span>SamyKiller</span>
+                        <span class="text-end">4.80 ETH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------tools menu------------>
+        <div id="tools">
+            <h5 class="pt-5 pb-1">Create and sell your NFTs</h5>
+            <div class="d-flex justify-content-between align-items flex-wrap gap-2">
+                <div>
+                    <i id="icon-wallet" class="tools-ico bi bi-wallet2"></i>
+                    <h6 class="fw-bolder">Set Up Your Wallet</h6>
+                    <!--tool description-->
+                    <p>
+                        Wallet that is functional for NFT purchasing. You may have a Coinbase account at this
+                        point, but very few are actually set up to buy an NFT.
+                    </p>
+                </div>
+                <div>
+                    <i id="icon-collection" class="tools-ico bi bi-collection"></i>
+                    <h6 class="fw-bolder">Create Your Collection</h6>
+                    <p>
+                        Setting up your NFT collection and creating NFTs on NFTs is easy! This guide explains
+                        how to set up your first collection.
+                    </p>
+                </div>
+                <div>
+                    <i id="icon-img" class="tools-ico bi bi-image"></i>
+                    <h6 class="fw-bolder">Add Your NFTs</h6>
+                    <p>
+                        Lorem ipsum dolor sit met consectetur adipisicing elit. Quae veritatis delectus fuga
+                        incidunt id esse aperiam molestias animi, Reiciendis fugiat alias saepe nemo libero illo
+                        dolorum eos voluptas at blanditis!
+                    </p>
+                </div>
+                <div>
+                    <i id="icon-sales" class="tools-ico bi bi-card-list"></i>
+                    <h6 class="fw-bolder">List Them For Sale</h6>
+                    <p>
+                        Choose between auctions, fixed-price listings, and declining-price listings. You choose
+                        how you want to sell your NFTs!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--------subscribe to us----------->
+        <div id="subscribe" class="py-5">
+            <h4 class="fw-bold">Subscribe Us</h4>
+            <form action="get" class="d-flex d-sm-inline-flex gap-2">
+                <input class="ps-2 w-100 rounded-1" type="text" placeholder="name@example.com">
+                <input type="submit" value="Subscribe" class="rounded-1">
+            </form>
+        </div>
+    </main>
+    <!----------The footer part----------->
+    <footer class="py-4 px-5 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+        <img class="mb-2" src="../Style/media/logo.png" alt="The NFT-M logo">
+        <div class="d-flex justify-content-around d-flex flex-column flex-sm-row w-75 gap-3 gap-sm-0">
+            <a href="#">My Account</a>
+            <a href="#">Company</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
