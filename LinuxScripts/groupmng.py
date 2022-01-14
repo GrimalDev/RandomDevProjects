@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+#Tool to get a clean tree view of all the groups and users that
+#This program has been made by GrimalDev
+#github.com/GrimalDev
+
 import grp
 from operator import indexOf
 
