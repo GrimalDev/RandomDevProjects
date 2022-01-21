@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -e "\nVoici la liste des utilisateurs crées sur votre système:" 
+getent passwd {1000..60000} | awk -F: '{ print $1}'
+echo ""
