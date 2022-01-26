@@ -6,6 +6,6 @@ Groumng.py : {
   
    Install Command:
    
-      curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /bin/groupmng
+    curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /bin/groupmng
 
 }
