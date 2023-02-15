@@ -9,3 +9,13 @@ Groumng.py : {
     curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /bin/groupmng
 
 }
+
+fetch-html.sh : {
+
+  => A tool to scrap a html page.
+  
+   Install Command:
+   
+    curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/fetch-html.sh -o fetch-html.sh ; sudo cp fetch-html.sh /bin/fetch-html ; sudo rm fetch-html.sh ; sudo chmod +x /bin/fetch-html
+
+}
