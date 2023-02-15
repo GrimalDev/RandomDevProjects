@@ -24,4 +24,4 @@ html="$(curl -X GET \
   --silent \
   $1)"
 
-echo $html > $2.html
+echo $html > $2
