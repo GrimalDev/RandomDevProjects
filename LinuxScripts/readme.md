@@ -6,8 +6,13 @@
   
    Install Command:
    
+   ### LINUX
    ```sh
-   curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /bin/groupmng
+   curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /usr/local/bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /usr/local/bin/groupmng
+   ```
+   ### MACOS
+   ```sh
+   curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/groupmng.py -o groupmng.py ; sudo cp groupmng.py /opt/homebrew/bin/groupmng ; sudo rm groupmng.py ; sudo chmod +x /bin/groupmng
    ```
 
 ---
@@ -18,8 +23,13 @@
   
    Install Command:
    
+   ### LINUX
    ```sh
    curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/fetch-html.sh -o fetch-html.sh ; sudo cp fetch-html.sh /bin/fetch-html ; sudo rm fetch-html.sh ; sudo chmod +x /bin/fetch-html
+   ```
+   ### MACOS
+   ```sh
+    curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/fetch-html.sh -o fetch-html.sh ; sudo cp fetch-html.sh /opt/homebrew/bin/fetch-html ; sudo rm fetch-html.sh ; sudo chmod +x /opt/homebrew/bin/fetch-html
    ```
     
 **HOW TO**
