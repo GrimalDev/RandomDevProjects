@@ -10,6 +10,8 @@ Groumng.py : {
 
 }
 
+---
+
 fetch-html.sh : {
 
   => A tool to scrap a html page.
@@ -17,5 +19,10 @@ fetch-html.sh : {
    Install Command:
    
     curl https://raw.githubusercontent.com/GrimalDev/RandomDevProjects/main/LinuxScripts/fetch-html.sh -o fetch-html.sh ; sudo cp fetch-html.sh /bin/fetch-html ; sudo rm fetch-html.sh ; sudo chmod +x /bin/fetch-html
+    
+    **HOW TO**
+    > Parameters:
+      1. URL to scrap
+      2. output file name (with extension)
 
 }
